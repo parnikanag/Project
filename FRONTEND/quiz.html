@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Career Guidance Quiz</h1>
+    <div id="quiz-container"></div>
+    <button onclick="nextQuestion()" id="nextBtn">Next</button>
+    <button onclick="submitQuiz()" id="submitBtn" class="hidden">Submit</button>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>🎯 Your Suggested Career</h2>
+    <div id="careerResult"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <div class="result-card" id="resultCard" style="display: none;">
+    <h2>🎯 Recommended Career Path: <span id="careerName">Software Developer</span></h2>
+    
+    <div class="career-section">
+      <h3>📌 Why Choose This Career?</h3>
+      <p id="careerReason">You'll get to build apps, websites, and systems that impact millions of users worldwide.</p>
+    </div>
+  
+    <div class="career-section">
+      <h3>💼 Job Opportunities</h3>
+      <p id="careerJobs">Web Developer, Mobile App Developer, Software Engineer, AI Developer, Game Developer</p>
+    </div>
+  
+    <div class="career-section">
+      <h3>🌟 Benefits</h3>
+      <p id="careerBenefits">High demand, creative freedom, remote work opportunities, high salary growth.</p>
+    </div>
+  
+    <div class="career-section">
+      <h3>💰 Expected Salary</h3>
+      <p id="careerSalary">₹5 LPA - ₹25 LPA based on skills and experience.</p>
+    </div>
+  
+    <button class="download-btn">📥 Download as PDF</button>
+  </div>
+  
+</body>
+</html>
